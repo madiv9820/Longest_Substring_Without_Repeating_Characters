@@ -124,8 +124,8 @@
     "input": {
       "s": "ohomm"
     },
-    "output": 2,
-    "description": "The best windows are oh, ho, and om, so the longest valid length is 2 🎯"
+    "output": 3,
+    "description": "The best windows is hom, so the longest valid length is 3 🎯"
   },
   {
     "title": "Trailing duplicate trims the answer abcdeaf 🔚",
