@@ -48,4 +48,20 @@ One valid answer is `"wke"` with length **3**.
 
 Find the longest **continuous** part of the string where **no character repeats**.
 
+### Approach Comparison 📊
+
+| Approach | Time Complexity | Space Complexity | Key Idea | Verdict |
+| --- | --- | --- | --- | --- |
+| Brute Force 🐢 | `O(n^3)` | `O(n)` | Check every possible substring | Good for learning, not for large inputs |
+| Sliding Window with Set 🪟 | `O(n)` | `O(n)` | Expand and shrink a unique-character window | Clean and interview-friendly |
+| Sliding Window with Index Map 🚀 | `O(n)` | `O(n)` | Track character positions for smarter duplicate handling | More precise than a plain set |
+| Sliding Window with ASCII Table ⚡ | `O(n)` | `O(1)` | Use fixed-size last-seen indices for direct jumps | Fastest and best final choice 🏆 |
+
+### Approach Guides 🗂️
+
+- [Brute Force Approach 🐢](docs/brute_force/README.md)
+- [Sliding Window with Set 🪟](docs/sliding_window_set/README.md)
+- [Sliding Window with Index Map 🚀](docs/sliding_window_index_map/README.md)
+- [Sliding Window with ASCII Table ⚡](docs/sliding_window_ascii_table/README.md)
+
 ---
