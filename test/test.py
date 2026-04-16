@@ -74,7 +74,7 @@ def _make_testcase(testcase):
 
 class TestSolution(unittest.TestCase):
     # 🎛️ Tweak this to make the test run faster or more cinematic.
-    DISPLAY_DELAY_SECONDS = 2
+    DISPLAY_DELAY_SECONDS = 0.5
 
     def setUp(self):
         # 🛠️ Each test gets a fresh solution instance to keep runs predictable.
