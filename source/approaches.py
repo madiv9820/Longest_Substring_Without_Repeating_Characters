@@ -13,6 +13,7 @@ Why this file exists:
 from typing import Set, Dict, List
 
 class Approaches:
+    
     """📚 Helper class containing all supported solving strategies."""
 
     def _solve_with_brute_force(self) -> int:
