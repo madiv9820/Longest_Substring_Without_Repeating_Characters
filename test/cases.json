@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Classic repeating pattern abcabcbb 🔁",
+    "input": {
+      "s": "abcabcbb"
+    },
+    "output": 3,
+    "description": "The longest substring without duplicates is abc, so the maximum length is 3 ✅"
+  },
+  {
+    "title": "Single repeated character bbbbb 🧱",
+    "input": {
+      "s": "bbbbb"
+    },
+    "output": 1,
+    "description": "Every window longer than one character repeats b, so the answer is 1 🔒"
+  },
+  {
+    "title": "Mixed repeat with valid middle window pwwkew 🎯",
+    "input": {
+      "s": "pwwkew"
+    },
+    "output": 3,
+    "description": "The longest valid substring is wke, which has length 3 ✨"
+  },
+  {
+    "title": "Empty string edge case ∅",
+    "input": {
+      "s": ""
+    },
+    "output": 0,
+    "description": "An empty string has no substrings, so the longest valid length is 0 📭"
+  },
+  {
+    "title": "Single character input a 🔤",
+    "input": {
+      "s": "a"
+    },
+    "output": 1,
+    "description": "A one-character string is always a valid substring of length 1 👍"
+  },
+  {
+    "title": "Duplicate appears after a long clean run abca 🚪",
+    "input": {
+      "s": "abca"
+    },
+    "output": 3,
+    "description": "The longest unique substring is abc before the second a forces the window to move 🚶"
+  },
+  {
+    "title": "All characters unique abcdef 🚀",
+    "input": {
+      "s": "abcdef"
+    },
+    "output": 6,
+    "description": "Since no character repeats, the whole string is the answer 🌟"
+  },
+  {
+    "title": "Repeated block with reset dvdf 🔄",
+    "input": {
+      "s": "dvdf"
+    },
+    "output": 3,
+    "description": "The best substring is vdf, which shows the window should continue after removing the duplicate 🔍"
+  },
+  {
+    "title": "Spaces count as characters a b c ␠",
+    "input": {
+      "s": "a b c a"
+    },
+    "output": 3,
+    "description": "Spaces are part of the string too, and the longest duplicate-free substring has length 3 🪟"
+  },
+  {
+    "title": "Symbols and punctuation stay valid !@#$%^ 🔣",
+    "input": {
+      "s": "!@#$%^"
+    },
+    "output": 6,
+    "description": "Special characters are allowed, and all six are unique here 💥"
+  },
+  {
+    "title": "Case sensitivity matters aA 👀",
+    "input": {
+      "s": "aA"
+    },
+    "output": 2,
+    "description": "Lowercase a and uppercase A are different characters, so both can stay in the window 🔠"
+  },
+  {
+    "title": "Immediate repeat after progress abba ⚠️",
+    "input": {
+      "s": "abba"
+    },
+    "output": 2,
+    "description": "The longest valid substrings are ab and ba, each with length 2 ↔️"
+  },
+  {
+    "title": "Longest window near the end tmmzuxt 📍",
+    "input": {
+      "s": "tmmzuxt"
+    },
+    "output": 5,
+    "description": "After handling repeated m, the longest unique substring becomes mzuxt with length 5 🏁"
+  },
+  {
+    "title": "Numbers behave like normal characters 12345123 🔢",
+    "input": {
+      "s": "12345123"
+    },
+    "output": 5,
+    "description": "The longest duplicate-free substring is 12345 before digits begin repeating 📈"
+  },
+  {
+    "title": "Longest window starts after duplicates anviaj 🧭",
+    "input": {
+      "s": "anviaj"
+    },
+    "output": 5,
+    "description": "After the repeated a is handled, the best window becomes nviaj with length 5 🌈"
+  },
+  {
+    "title": "Repeat forces a tight jump in the middle ohomm 🪜",
+    "input": {
+      "s": "ohomm"
+    },
+    "output": 2,
+    "description": "The best windows are oh, ho, and om, so the longest valid length is 2 🎯"
+  },
+  {
+    "title": "Trailing duplicate trims the answer abcdeaf 🔚",
+    "input": {
+      "s": "abcdeaf"
+    },
+    "output": 6,
+    "description": "The best substring is bcdeaf, which keeps six unique characters after the repeated a shifts the window ➡️"
+  },
+  {
+    "title": "Alternating duplicates keep the window moving abababab 🔄",
+    "input": {
+      "s": "abababab"
+    },
+    "output": 2,
+    "description": "Only ab and ba stay valid, so the longest duplicate-free length remains 2 🔁"
+  },
+  {
+    "title": "Long clean stretch after an early repeat cddabcde 🛣️",
+    "input": {
+      "s": "cddabcde"
+    },
+    "output": 5,
+    "description": "Once the duplicate d is cleared, the window grows to abcde with length 5 🚀"
+  },
+  {
+    "title": "Repeated spaces matter just like letters a  b  c ␠",
+    "input": {
+      "s": "a  b  c"
+    },
+    "output": 2,
+    "description": "Consecutive spaces are duplicates too, so the longest valid window reaches only length 2 🧩"
+  },
+  {
+    "title": "Unique substring made of symbols and letters a!b@c#d$ ✨",
+    "input": {
+      "s": "a!b@c#d$"
+    },
+    "output": 8,
+    "description": "Every character is unique here, so the entire mixed string is the answer 🎉"
+  },
+  {
+    "title": "Duplicate returns after a gap abccdefgh 🧱",
+    "input": {
+      "s": "abccdefgh"
+    },
+    "output": 6,
+    "description": "After the repeated c resets the window, cdefgh becomes the longest valid substring 🌟"
+  },
+  {
+    "title": "Window grows to the full string through mixed case aAbBcC 🔠",
+    "input": {
+      "s": "aAbBcC"
+    },
+    "output": 6,
+    "description": "Uppercase and lowercase letters are distinct, so all six characters can stay together ✅"
+  },
+  {
+    "title": "Many repeats before a clean finish zzzabcdef 🏁",
+    "input": {
+      "s": "zzzabcdef"
+    },
+    "output": 7,
+    "description": "The repeated z values collapse early windows, then zabcdef stretches to length 7 💨"
+  },
+  {
+    "title": "Duplicate at both ends creates a long inner answer abcdefga 🔍",
+    "input": {
+      "s": "abcdefga"
+    },
+    "output": 7,
+    "description": "The repeated a at the end shifts the window, but bcdefga still gives a longest length of 7 🪄"
+  },
+  {
+    "title": "Short tricky pattern pkewp 📌",
+    "input": {
+      "s": "pkewp"
+    },
+    "output": 4,
+    "description": "The longest substring without repeats is kewp, which reaches length 4 after the first p drops out 🚪"
+  },
+  {
+    "title": "Late repeat after full progress qwertyq ⌨️",
+    "input": {
+      "s": "qwertyq"
+    },
+    "output": 6,
+    "description": "The first six characters are all unique, and the final q only matches the opening one at the end 🧠"
+  }
+]
